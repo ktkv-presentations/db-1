@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/ktkv.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section><h1>ВВЕДЕНИЕ В БАЗЫ ДАННЫХ</h1></section>
+				<section>
+					<h1>
+						Основы проектирования баз данных
+					</h1>
+					<div style="text-align: center;">
+						<h4>Кутиков Павел Алексеевич</h4>
+						<p>email: kutikovpasha@gmail.com</p>
+						<p>socials: @ktkv419</p>
+						<img src="/assets/lections-qr.png" style="height: 100%;" alt="">
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Информационная система</h1>
+					<p>система, реализующую автоматизированный сбор, обработку и манипулирование данными и включающую технические
+						средства обработки данных, программное обеспечение и обслуживающий персонал</p>
+				</section>
+				<section>
+					<h1>Банк данных</h1>
+					<p>система специальным образом организованных данных, предназначенных для обеспечения централизованного
+						накопления и коллективного многоцелевого использования данных.</p>
+				</section>
+				<section>
+					<h1>Функции банка данных относятся</h1>
+					<ul>
+						<li>
+							хранение данных и их защита;
+						</li>
+						<li>
+							изменение (обновление, добавление и удаление) хранимых данных;
+						</li>
+						<li>
+							поиск и отбор данных по запросам пользователей;
+						</li>
+						<li>
+							обработка данных и вывод результатов.
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Базы данных</h1>
+					<p>ядро банка данных и представляет совокупность взаимосвязанных и вместе хранящихся данных из определенной
+						предметной области, организованных специальным образом и хранимых во внешней памяти (файлах базы данных).
+					</p>
+				</section>
+				<section>
+					<h1>Администратор базы данных</h1>
+					<p>лицо, отвечающее за выработку требований к базе данных, её проектирование, реализацию, эффективное
+						использование и сопровождение, включая управление учётными записями пользователей БД и защиту от
+						несанкциониро</p>
+				</section>
+				<section>
+					<h1>Целостность БД</h1>
+					<p>свойство БД, означающее, что база данных содержит полную и непротиворечивую информацию, необходимую и
+						достаточную для корректного функционирования приложений</p>
+				</section>
+			</section>
+			<section>
+
+				<section>
+					<h1>Система управления базой данных</h1>
+					<h4>СУБД</h4>
+					<p>совокупность языковых и программных средств, предназначенных для создания, ведения и совместного
+						использования БД многими пользователями</p>
+				</section>
+				<section>
+					<h1>Функции СУБД</h1>
+					<ul>
+						<li>
+							перевод схемы, описанной на языке структуру данных в некоторое внутреннее представление
+						</li>
+						<li>
+							создание БД (загрузка данных в БД);
+						</li>
+						<li>
+							обновление некоторой части БД без изменения структуры данных;
+						</li>
+						<li>
+							обеспечение защиты данных и приоритетов в их использовании
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Примеры СУБД</h1>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+						<div>
+							<img src="assets/mysql.png" alt="">
+							<p>MySQL</p>
+						</div>
+						<div>
+							<img src="assets/postgresql.png" alt="">
+							<p>PostgreSQL</p>
+						</div>
+						<div>
+							<img src="assets/sqlite.png" alt="">
+							<p>SQLite</p>
+						</div>
+						<div>
+							<img src="assets/oracle.png" alt="">
+							<p>Oracle Database</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Примеры СУБД</h1>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+						<div>
+							<img src="assets/mongodb.png" alt="">
+							<p>MongoDB</p>
+						</div>
+						<div>
+							<img src="assets/redis.png" alt="">
+							<p>Redis</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Модели данных</h1>
+					<p>некоторая абстракция, в рамках которой данные оформленны, которая позволяет пользователям и разработчикам
+						трактовать их как информацию и взаимосвязь между ними</p>
+				</section>
+				<section>
+					<h1>Иерархическая модель</h1>
+					<p>в виде древовидной структуры</p>
+					<img style="width: 70%;" src="assets/Tree.drawio.png" alt="">
+				</section>
+				<section>
+					<h1>Сетевая модель</h1>
+					<p>в виде сетевой структуры, когда любой элемент может быть связан с любым другим элементом</p>
+					<img style="width: 70%;" src="assets/network.drawio.png" alt="">
+				</section>
+				<section style="background-color: white;">
+					<h1>Реляционная модель</h1>
+					<p style="color: black;">предполагает использование двумерных таблиц (отношений), связь между которыми
+						осуществляется посредством значений одного или нескольких совпадающих полей</p>
+					<img style="width: 70%;" src="assets/relational.drawio.png" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Требования к БД</h1>
+					<h3>Полнота данных</h3>
+					<p>должна обеспечивать полное и адекватное описание предметной области</p>
+				</section>
+				<section>
+					<h1>Требования к БД</h1>
+					<h3>Непротиворечивость данных</h3>
+					<p>должны проверяться на правильность при вводе, существует запрет на дублирование данных</p>
+				</section>
+				<section>
+					<h1>Требования к БД</h1>
+					<h3>Целостность данных</h3>
+					<ul>
+						<li>правильность ссылок между таблицами</li>
+						<li>блокировка модифицируемых записей, при одновременной работе с БД</li>
+						<li>механизм транзакций (последовательность операций над БД), позволяющий вернуться на несколько шагов назад
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Физическая архитектура БД</h1>
+					<h3>Локальные базы данных</h3>
+					<p>Располагаются на компьютере, на котором работает пользователь</p>
+				</section>
+				<section>
+					<h1>Физическая архитектура БД</h1>
+					<h3>Централизованные базы данных</h3>
+					<p>хранится на центральном компьютере, пользователи и
+						прикладные программы имеют удаленный доступ к базе данных</p>
+					<h5>клиент-сервер</h5>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
